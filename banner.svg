@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#0c4a6e"/>
+  <circle cx="1050" cy="60" r="150" fill="#38bdf8" opacity="0.16"/>
+  <text x="70" y="145" fill="#f0f9ff" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">web-engineering-skills</text>
+  <text x="70" y="205" fill="#bae6fd" font-family="Segoe UI, Arial, sans-serif" font-size="26">Routing, validation, rendering, navigation, and request-response design.</text>
+</svg>

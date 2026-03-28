@@ -1,0 +1,175 @@
+{
+  "name": "web-engineering-pack",
+  "version": "0.1.0",
+  "type": "skill-pack",
+  "summary": "Web engineering pack for Claude Code-style workflows.",
+  "recommended_order": [
+    "request-response-flow-mapper",
+    "form-validation-designer",
+    "request-parameter-validator",
+    "server-side-validation-enforcer",
+    "session-state-strategy-reviewer",
+    "mvc-boundary-checker",
+    "route-and-controller-planner",
+    "template-rendering-reviewer",
+    "web-application-framework-selector",
+    "presentation-model-designer",
+    "progressive-enhancement-reviewer",
+    "client-server-responsibility-splitter",
+    "web-navigation-structure-reviewer",
+    "error-page-and-fallback-planner",
+    "web-feature-iteration-planner"
+  ],
+  "skills": [
+    {
+      "id": "request-response-flow-mapper",
+      "path": "skills/request-response-flow-mapper/SKILL.md",
+      "purpose": "Map the request-response flow for a web feature including actors, routes, parameters, controllers, services, data stores, and rendered outputs.",
+      "handoffs": [
+        "form-validation-designer",
+        "route-and-controller-planner",
+        "client-server-responsibility-splitter"
+      ]
+    },
+    {
+      "id": "form-validation-designer",
+      "path": "skills/form-validation-designer/SKILL.md",
+      "purpose": "Design input validation rules for forms including required fields, format checks, boundaries, error messaging, and invalid/missing cases.",
+      "handoffs": [
+        "request-parameter-validator",
+        "server-side-validation-enforcer",
+        "error-page-and-fallback-planner"
+      ]
+    },
+    {
+      "id": "request-parameter-validator",
+      "path": "skills/request-parameter-validator/SKILL.md",
+      "purpose": "Review query, path, header, cookie, and body parameters so valid, invalid, and missing cases are explicitly handled.",
+      "handoffs": [
+        "server-side-validation-enforcer",
+        "form-validation-designer",
+        "route-and-controller-planner"
+      ]
+    },
+    {
+      "id": "server-side-validation-enforcer",
+      "path": "skills/server-side-validation-enforcer/SKILL.md",
+      "purpose": "Enforce the rule that trust boundaries are on the server and validation cannot rely on client-side checks alone.",
+      "handoffs": [
+        "request-parameter-validator",
+        "error-page-and-fallback-planner",
+        "session-state-strategy-reviewer"
+      ]
+    },
+    {
+      "id": "session-state-strategy-reviewer",
+      "path": "skills/session-state-strategy-reviewer/SKILL.md",
+      "purpose": "Review how the application manages session state, identity, transient workflow data, and concurrency risks across requests.",
+      "handoffs": [
+        "client-server-responsibility-splitter",
+        "error-page-and-fallback-planner",
+        "mvc-boundary-checker"
+      ]
+    },
+    {
+      "id": "mvc-boundary-checker",
+      "path": "skills/mvc-boundary-checker/SKILL.md",
+      "purpose": "Check whether models, views, controllers, handlers, or route functions have clear responsibilities without leaking concerns across layers.",
+      "handoffs": [
+        "route-and-controller-planner",
+        "template-rendering-reviewer",
+        "client-server-responsibility-splitter"
+      ]
+    },
+    {
+      "id": "route-and-controller-planner",
+      "path": "skills/route-and-controller-planner/SKILL.md",
+      "purpose": "Plan routes, handlers, controllers, and action boundaries so the web surface is coherent, minimal, and testable.",
+      "handoffs": [
+        "request-response-flow-mapper",
+        "mvc-boundary-checker",
+        "web-navigation-structure-reviewer"
+      ]
+    },
+    {
+      "id": "template-rendering-reviewer",
+      "path": "skills/template-rendering-reviewer/SKILL.md",
+      "purpose": "Review server-side templates or rendering logic for duplication, unsafe assumptions, presentation leakage, and missing states.",
+      "handoffs": [
+        "presentation-model-designer",
+        "mvc-boundary-checker",
+        "error-page-and-fallback-planner"
+      ]
+    },
+    {
+      "id": "web-application-framework-selector",
+      "path": "skills/web-application-framework-selector/SKILL.md",
+      "purpose": "Select an appropriate web application framework or stack based on routing, rendering, forms, security, deployment, and team capability.",
+      "handoffs": [
+        "route-and-controller-planner",
+        "mvc-boundary-checker",
+        "web-feature-iteration-planner"
+      ]
+    },
+    {
+      "id": "presentation-model-designer",
+      "path": "skills/presentation-model-designer/SKILL.md",
+      "purpose": "Design the presentation model for a web feature including pages, components, dynamic states, validation messages, and navigation outcomes.",
+      "handoffs": [
+        "template-rendering-reviewer",
+        "web-navigation-structure-reviewer",
+        "error-page-and-fallback-planner"
+      ]
+    },
+    {
+      "id": "progressive-enhancement-reviewer",
+      "path": "skills/progressive-enhancement-reviewer/SKILL.md",
+      "purpose": "Review whether the feature still works with minimal JavaScript and whether richer behavior enhances rather than replaces baseline functionality.",
+      "handoffs": [
+        "client-server-responsibility-splitter",
+        "template-rendering-reviewer",
+        "error-page-and-fallback-planner"
+      ]
+    },
+    {
+      "id": "client-server-responsibility-splitter",
+      "path": "skills/client-server-responsibility-splitter/SKILL.md",
+      "purpose": "Decide which responsibilities belong on the client and which belong on the server including validation, orchestration, rendering, and persistence.",
+      "handoffs": [
+        "mvc-boundary-checker",
+        "session-state-strategy-reviewer",
+        "progressive-enhancement-reviewer"
+      ]
+    },
+    {
+      "id": "web-navigation-structure-reviewer",
+      "path": "skills/web-navigation-structure-reviewer/SKILL.md",
+      "purpose": "Review the site or feature navigation structure so page flows, links, forms, and recovery paths are understandable and complete.",
+      "handoffs": [
+        "presentation-model-designer",
+        "error-page-and-fallback-planner",
+        "web-feature-iteration-planner"
+      ]
+    },
+    {
+      "id": "error-page-and-fallback-planner",
+      "path": "skills/error-page-and-fallback-planner/SKILL.md",
+      "purpose": "Plan user-visible recovery behavior for invalid input, unauthorized access, not found, server failure, and degraded capability cases.",
+      "handoffs": [
+        "server-side-validation-enforcer",
+        "presentation-model-designer",
+        "progressive-enhancement-reviewer"
+      ]
+    },
+    {
+      "id": "web-feature-iteration-planner",
+      "path": "skills/web-feature-iteration-planner/SKILL.md",
+      "purpose": "Break a web feature into staged increments covering page shell, routing, data, validation, rendering, and hardening.",
+      "handoffs": [
+        "request-response-flow-mapper",
+        "route-and-controller-planner",
+        "web-navigation-structure-reviewer"
+      ]
+    }
+  ]
+}
