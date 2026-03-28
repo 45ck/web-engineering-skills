@@ -94,9 +94,9 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [web-engineer](https://github.com/45ck/workflow-agents) - Own routes, validation, sessions, and web flow boundaries
-- [backend-engineer](https://github.com/45ck/workflow-agents) - Carry server-side contracts and persistence concerns forward
-- [test-designer](https://github.com/45ck/workflow-agents) - Design coverage for user-facing flows and states
+- [web-engineer](https://github.com/45ck/skill-harness) - Own routes, validation, sessions, and web flow boundaries
+- [backend-engineer](https://github.com/45ck/skill-harness) - Carry server-side contracts and persistence concerns forward
+- [test-designer](https://github.com/45ck/skill-harness) - Design coverage for user-facing flows and states
 
 ## Related skill packs
 
